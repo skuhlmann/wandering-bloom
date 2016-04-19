@@ -9,16 +9,21 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5.x'
 gem 'jbuilder', '~> 2.0'
+gem 'dotenv-rails'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
+
+group :production, :staging do
+  gem 'rails_12factor'
+end
 
 group :development, :test do
   gem 'pry'
   gem 'pry-rails'
-end
-
-group :test do
   gem 'rspec-rails'
+  gem 'nokogiri', '1.6.6.2'
+  gem 'capybara'
+  gem 'selenium'
 end
 
 group :development do

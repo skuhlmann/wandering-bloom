@@ -1,6 +1,15 @@
-// Place all the styles related to the bloom controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$fancy-text: 'Megrim', cursive;
+$normal-text: 'Roboto Slab', serif;
+
+h2 {
+  font-family: $fancy-text;
+  font-size: 95px;
+}
+
+p {
+  font-family: $normal-text;
+  font-size: 25px;
+}
 
 .main-content {
   margin-top: 10%;
@@ -9,3 +18,6 @@
 .text-center {
   text-align: center;
 }
+
+
+

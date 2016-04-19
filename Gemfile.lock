@@ -57,6 +57,7 @@ GEM
       execjs
     coffee-script-source (1.10.0)
     concurrent-ruby (1.0.1)
+    database_cleaner (1.5.2)
     debug_inspector (0.0.2)
     diff-lcs (1.2.5)
     dotenv (2.1.1)
@@ -208,6 +209,7 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
+  database_cleaner
   dotenv-rails
   jbuilder (~> 2.0)
   jquery-rails

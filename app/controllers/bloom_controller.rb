@@ -1,0 +1,2 @@
+class BloomController < ApplicationController
+end

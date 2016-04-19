@@ -1,0 +1,2 @@
+module BloomHelper
+end

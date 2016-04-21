@@ -4,7 +4,7 @@ $(document).ready(function() {
     init: function() {
       var userTime = this.getUserTime();
       this.getSentence(userTime);
-
+      this.setListeners();
     },
 
     getUserTime: function() {
@@ -23,8 +23,17 @@ $(document).ready(function() {
       }).done(function(res) {
         $(".sentence").text(res.text);
         $(".twitter-share-button").attr("href", "https://twitter.com/share?text=" + res.text);
+      });
+    },
 
-        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+    setListeners: function() {
+      $(".twitter-share-button").on('click', function() {
+        window.open(
+          this.href,
+          'targetWindow',
+          'toolbar=no,menubar=no,scrollbars=no,resizable=yes,width=450,height=300'
+          );
+        return false;
       });
     }
   };

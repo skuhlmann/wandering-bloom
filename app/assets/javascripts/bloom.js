@@ -4,13 +4,15 @@ $(document).ready(function() {
     init: function() {
       var userTime = this.getUserTime();
       this.getSentence(userTime);
+
     },
 
     getUserTime: function() {
       var displayTime = $("time").text();
       var hour = displayTime.split(":")[0];
+      if (hour[0] == "0") { hour = hour[1] }
       var period = displayTime.split(":")[1].split(" ")[1];
-      console.log(hour + period.toLowerCase());
+
       return hour + period.toLowerCase();
     },
 
@@ -20,10 +22,17 @@ $(document).ready(function() {
         context: document.body
       }).done(function(res) {
         $(".sentence").text(res.text);
-        console.log(res);
+        $(".twitter-share-button").attr("href", "https://twitter.com/share?text=" + res.text);
       });
     }
   };
 
   bloomApp.init();
+
+  !function(d,s,id){
+    var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+    if(!d.getElementById(id)){js=d.createElement(s);
+      js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+      fjs.parentNode.insertBefore(js,fjs);
+    }}(document, 'script', 'twitter-wjs');
 });

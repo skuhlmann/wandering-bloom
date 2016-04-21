@@ -1,22 +1,59 @@
 $fancy-text: 'Megrim', cursive;
 $normal-text: 'Roboto Slab', serif;
 
+html {
+  background: url(bg-light.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 h2 {
   font-family: $fancy-text;
-  font-size: 95px;
+  font-size: 130px;
+}
+
+h2 span {
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
 }
 
 p {
   font-family: $normal-text;
-  font-size: 25px;
+  font-size: 40px;
+}
+
+p span {
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 3px;
 }
 
 .main-content {
-  margin-top: 10%;
+  margin-top: 20%;
 }
 
 .text-center {
   text-align: center;
+}
+
+// desktop
+@media (min-width: 750px) {
+  h2 {
+    font-size: 95px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+  .main-content {
+    margin-top: 10%;
+  }
 }
 
 

@@ -1,7 +1,7 @@
 $fancy-text: 'Megrim', cursive;
 $normal-text: 'Roboto Slab', serif;
 
-body {
+html {
   background-image: url(bg-light.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -59,8 +59,25 @@ a {
   color: #fff;
   position: relative;
   padding: 7px 7px 7px 7px;
-  border-radius: 3px;
   font-weight: 500;
+}
+
+.refresh {
+  margin-top: 100px;
+  color: black;
+}
+
+.refresh-link {
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 9px;
+}
+
+.refresh-link:hover {
+  background-color: white;
+  color: black;
 }
 
 // desktop

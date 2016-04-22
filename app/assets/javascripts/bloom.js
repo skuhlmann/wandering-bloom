@@ -35,6 +35,11 @@ $(document).ready(function() {
           );
         return false;
       });
+
+      $(".refresh-link").on('click', function() {
+        var userTime = bloomApp.getUserTime();
+        bloomApp.getSentence(userTime);
+      });
     }
   };
 

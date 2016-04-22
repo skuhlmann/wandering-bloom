@@ -12,31 +12,33 @@ body {
 
 h2 {
   font-family: $fancy-text;
-  font-size: 130px;
+  font-size: 55px;
+  line-height: 75px;
 }
 
 h2 span {
   background-color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
 }
 
 p {
   font-family: $normal-text;
-  font-size: 40px;
+  font-size: 20px;
+  line-height: 37px;
 }
 
 p span {
   background-color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
 }
 
 a {
   text-decoration: none;
-  font-size: 21px;
+  font-size: 12px;
 }
 
 .main-content {
@@ -48,17 +50,37 @@ a {
   text-align: center;
 }
 
-// // desktop
-// @media (min-width: 750px) {
-//   h2 {
-//     font-size: 95px;
-//   }
+.label {
+  margin-left: 5px;
+}
 
-//   p {
-//     font-size: 25px;
-//   }
+.twitter-share-button {
+  background-color: #1b95e0;
+  color: #fff;
+  position: relative;
+  padding: 7px 7px 7px 7px;
+  border-radius: 3px;
+  font-weight: 500;
+}
 
-//   .main-content {
-//     margin-top: 10%;
-//   }
-// }
+// desktop
+@media (min-width: 750px) {
+  h2 {
+    font-size: 95px;
+    line-height: 120px;
+  }
+
+  p {
+    font-size: 25px;
+    line-height: 46px;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .main-content {
+    margin-top: 10%;
+  }
+}

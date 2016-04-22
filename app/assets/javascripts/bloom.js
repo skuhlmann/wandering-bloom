@@ -22,7 +22,7 @@ $(document).ready(function() {
         context: document.body
       }).done(function(res) {
         $(".sentence").text(res.text);
-        $(".twitter-share-button").attr("href", "https://twitter.com/share?text=" + res.text);
+        $(".twitter-share-button").attr("href", "https://twitter.com/share?text=" + res.text + "&url=http://wanderingbloom.com");
       });
     },
 

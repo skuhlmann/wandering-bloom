@@ -13,6 +13,7 @@ gem 'dotenv-rails'
 gem 'local_time', '~> 1.0', '>= 1.0.3'
 gem 'activerecord-import', '>= 0.11.0'
 gem 'responders'
+gem "font-awesome-rails"
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'

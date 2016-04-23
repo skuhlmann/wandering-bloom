@@ -9,6 +9,6 @@ class Sentence < ApplicationRecord
 
   def self.starting_row
     records = Sentence.count
-    (1..records).to_a.sample
+    (0..records).to_a.sample
   end
 end

@@ -35,7 +35,7 @@ class Api::V1::BloomController < ApplicationController
       "8pm" => "8pm",
       "9pm" => "9pm",
       "10pm" => "10pm",
-      "11pm" => "11pm",
+      "11pm" => "10pm",
       "12am" => "12am"
      }
   end

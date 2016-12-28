@@ -10,6 +10,7 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require hammer
 //= require local_time
 //= require jquery
 //= require jquery_ujs

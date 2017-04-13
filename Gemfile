@@ -14,6 +14,7 @@ gem 'activerecord-import', '>= 0.11.0'
 gem 'responders'
 gem 'font-awesome-rails'
 gem 'hammerjs-rails'
+gem 'twitter'
 
 group :production, :staging do
   gem 'rails_12factor'

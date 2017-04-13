@@ -12,4 +12,4 @@ There's also a front end:
 - - Ulysses is a long book
 - Twitter integration
 
-![Wandering Bloom](bloom-mobile.png)
+![Wandering Bloom](bloom-mobile-sm.png)

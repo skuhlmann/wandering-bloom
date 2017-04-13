@@ -4,8 +4,7 @@ Pineapple rock, lemon platt, butter scotch.
 
 Playing with Rails 5 and James Joyce's Ulysses. 
 
-http://www.wanderingbloom.com/
-[Wandering Bloom](http://www.wanderingbloom.com/)
+[Production Site](http://www.wanderingbloom.com/)
 
 ### Features
 

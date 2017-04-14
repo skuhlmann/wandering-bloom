@@ -9,7 +9,7 @@ There's also a front end:
 
 ### Features
 - Text parsing and PostgreSQL integration
-- - Ulysses is a long book
+-- Ulysses is a long book
 - Twitter integration
 
 ![Wandering Bloom](bloom-mobile-sm.png)

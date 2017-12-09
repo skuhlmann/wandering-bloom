@@ -38,6 +38,7 @@ namespace "joyce" do
     Sentence.where(text: ".").delete_all
     Sentence.where(text: "?").delete_all
     Sentence.where(text: "!").delete_all
+    Sentence.where("length(text) < 3").delete_all
     last_sentence = Sentence.last
     next_last = Sentence.find((last_sentence.id - 1))
     last_sentence.text = "#{next_last.text} #{last_sentence.text.split(".")[0]}"

@@ -24,7 +24,7 @@ group :development, :test do
   gem 'pry'
   gem 'pry-rails'
   gem 'rspec-rails'
-  gem 'nokogiri', '1.6.6.2'
+  gem 'nokogiri', '~> 1.8.2'
   gem 'capybara'
   gem 'selenium'
 end
@@ -42,4 +42,4 @@ end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-ruby '2.3.0'
+ruby '2.3.1'
